@@ -33,6 +33,15 @@ html {
     float: left;
     border-radius: 0 0 3px 3px;
   }
+
+  .keylabel {
+    position: relative;
+    top: 150px;
+    left: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: cadetblue;
+  }
   
   .key.black--key::after {
     background-color: #1d1e22;
