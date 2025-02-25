@@ -45,11 +45,12 @@ html {
   
   .key.black--key::after {
     background-color: #1d1e22;
-    content: "";
+    content: "Ba";
+    color: white;
     position: absolute;
     left: -18px;
     width: 32px;
-    height: 100px;
+    height: 160px;
     border-radius: 0 0 3px 3px;
   }
   
