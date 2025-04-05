@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="hidden">
   
 
   <head>
@@ -8,14 +8,14 @@
       .hidden {display:none;}
     </style>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
     <script>
-    $('html').addClass('hidden');
-    //show body content once styles and includes are ready
-    $(document).ready(function() {
-      $('html').removeClass('hidden');
-    });
+      // var MyHtml = document.querySelector("html");
+      // MyHtml.classList.add("hidden");
+
+      document.addEventListener("DOMContentLoaded", function(e) {
+        //show body content once styles and includes are ready
+        MyHtml.classList.remove("hidden");
+      });    
     </script>
 
     <!-- All of the above content is replaced by the head-fragment.html content upon page load completion -->
