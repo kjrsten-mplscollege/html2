@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Avoid a flash of unstyled content - hide everything until the whole page is ready -->
+    <style type="text/css">
+      .hidden {display:none;}
+    </style>
     <!-- head-fragment -->
   </head>
   
-  <body>
+  <body class="hidden">
     <nav id="navbar">
       <!-- navbar-fragment -->
     </nav>
@@ -23,11 +27,9 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <script>
-    //Avoid a flash of unstyled content - hide everything until the whole page is ready
-    $('html').addClass('hidden');
-
+    //show body content once styles and includes are ready
     $(document).ready(function() {
-      $('html').removeClass('hidden');
+      $('body').removeClass('hidden');
     });
     </script>
      
