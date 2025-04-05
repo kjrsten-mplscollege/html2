@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="hidden">
   <head>
     <!-- Avoid a flash of unstyled content - hide everything until the whole page is ready -->
     <style type="text/css">
@@ -8,7 +8,7 @@
     <!-- head-fragment -->
   </head>
   
-  <body class="hidden">
+  <body>
     <nav id="navbar">
       <!-- navbar-fragment -->
     </nav>
@@ -29,7 +29,7 @@
     <script>
     //show body content once styles and includes are ready
     $(document).ready(function() {
-      $('body').removeClass('hidden');
+      $('html').removeClass('hidden');
       $('#flash').addClass('hidden');
     });
     </script>
