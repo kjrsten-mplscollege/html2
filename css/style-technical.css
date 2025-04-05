@@ -24,7 +24,7 @@ body {
     width: 300px;
     padding: 10px;
     height: 100%;
-    border-right: solid 3px rgb(87, 163, 163);
+    border-right: solid 3px rgb(122, 87, 163);
   }
 
   #main-doc {
@@ -35,7 +35,7 @@ body {
   }
 
   .blurb {
-    color: rgb(181, 171, 97);
+    color: rgb(97, 125, 181);
     font-style: italic;
     font-weight: bold;
   }
