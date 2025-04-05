@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" class="hidden">
+<html lang="en">
   
-<style type="text/css">
-  .hidden {display:none;}
-</style>
+
   <head>
     <!-- Avoid a flash of unstyled content - hide everything until the whole page is ready -->
-    
-    <!-- head-fragment -->
+    <style type="text/css">
+      .hidden {display:none;}
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+    $('html').addClass('hidden');
+    //show body content once styles and includes are ready
+    $(document).ready(function() {
+      $('html').removeClass('hidden');
+    });
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technical Documentation</title>
+
+    <link rel="stylesheet" href="css/style-technical.css">
+
   </head>
   
   <body>
@@ -16,7 +33,6 @@
     </nav>
 
     <main id="main-doc">
-      <h1 id="flash">FLASH</h1>
       <p class="blurb">This article explains what CSS is, what the basic syntax looks like, and how your browser applies CSS to HTML to style it.</p>
 
       <div id="sections">
@@ -26,15 +42,7 @@
     </main>
         
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-    <script>
-    //show body content once styles and includes are ready
-    $(document).ready(function() {
-      $('html').removeClass('hidden');
-      $('#flash').addClass('hidden');
-    });
-    </script>
+    
      
     <script src="js/technical-js.js"></script>
   </body>
