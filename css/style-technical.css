@@ -8,8 +8,8 @@ body {
   
   code {
     display: block;
-  background-color: silver;
-  padding: 10px;
+    background-color: rgb(223, 222, 222);
+    padding: 10px;
   }
 
   #navbar {
@@ -18,9 +18,10 @@ body {
     top: 0px;
     left: 0px;
     width: 300px;
+    padding: 10px;
     height: 100%;
     border-right: solid;
-      border-right-color: currentcolor;
+    border-right-color: currentcolor;
     border-color: rgba(0, 22, 22, 0.4);
   }
 
@@ -37,7 +38,6 @@ body {
     nav {
       display: inline-block;
       height: 100%;
-      float: left;
       padding-right: 25px;
     }
   }

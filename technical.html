@@ -1,106 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Technical Documentation</title>
-    <link rel="stylesheet" href="css/style-technical.css">
+    <!-- head-fragment -->
   </head>
   
-  
   <body>
+    <nav id="navbar">
+      <!-- navbar-fragment -->
+    </nav>
 
+    <main id="main-doc">
     
-        <nav id="navbar">
-          <header>What is CSS?</header>
-          <ul>
-            <li><a class="nav-link" href="#Browser_default_styles">Browser default styles</a></li>
-            <li><a class="nav-link" href="#What_is_CSS_for?">What is CSS for?</a></li>
-            <li><a class="nav-link" href="#CSS_syntax_basics">CSS syntax basics</a></li>
-            <li><a class="nav-link" href="#How_is_CSS_applied_to_HTML?">How is CSS applied to HTML?</a></li>
-            <li><a class="nav-link" href="#Summary">Summary</a></li>
-          </ul>
-        </nav>
+      <p>This article explains what CSS is, what the basic syntax looks like, and how your browser applies CSS to HTML to style it.</p>
 
-
-        <main id="main-doc">
-        <p>CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS, what the basic syntax looks like, and how your browser applies CSS to HTML to style it.</p>
-        
-        <section class="main-section" id="Browser_default_styles">
-          <header>Browser default styles</header>
-          <p>In the Structuring content with HTML module, we covered what HTML is and how it is used to mark up documents. These documents will be readable in a web browser. Headings will look larger than regular text, paragraphs break onto a new line and have space between them. Links are colored and underlined to distinguish them from the rest of the text.</p>
-        <p>What you are seeing are the browser's default styles — very basic styling that the browser applies to HTML to make sure that the page will be basically readable even if no explicit styling is specified by the author of the page. These styles are defined in default CSS stylesheets contained within the browser — they have nothing to do with HTML.</p>
-        </section>
-        
-        <section class="main-section" id="What_is_CSS_for?">
-          <header>What is CSS for?</header>
-          <p>Using CSS, you can control exactly how HTML elements look in the browser, presenting your documents to your users with whatever design and layout you like.</p>
-          <p>A document is usually a text file structured using a markup language, most commonly HTML (these are termed HTML documents). You may also come across documents written in other markup languages such as SVG or XML. Where previously we've talked about web pages, an HTML document contains the web page's content and specifies its structure.</p>
-          <p>Presenting a document to a user means converting it into a form usable by your audience. Browsers like Firefox, Chrome, Safari, and Edge are designed to present documents visually, for example, on a computer screen, projector, mobile device, or printer. In a web context, this is generally referred to as rendering; we provided a simplified description of the process by which a web page is rendered in How browsers load websites.</p>
-          <p>CSS can be used for many purposes related to the look and feel of your web page. The most important are:</p>
-          <ul>
-            <li>Text styling, for example, for changing the color and size of headings and links.</li>
-            <li>Creating layouts, for example, turning a single column of text into a multiple-column layout.</li>
-            <li>Special effects such as animation.</li>
-          </ul>
-        </section>
-        
-        <section class="main-section" id="CSS_syntax_basics">
-          <header>CSS syntax basics</header>
-          <p>CSS is a rule-based language — you define rules by specifying groups of styles that should be applied to particular element or groups of elements on your web page.</p>
-          <p>For example, you might decide to style the main heading on your page as large red text. The following code shows a very simple CSS rule that would achieve this:</p>
-          <code>h1 {<br>
-          color: red;<br>
-          font-size: 2.5em;<br>
-        }</code>
-          <ul>
-            <li>In the above example, the CSS rule opens with a selector. This selects the HTML elements that we are going to style. In this case, we are styling level one headings (&lt;h1&gt;).</li>
-            <li>We then have a set of curly braces — { }.</li>
-            <li>The braces contain one or more declarations, which take the form of property and value pairs. We specify the property (for example, color in the above example) before the colon, and we specify the value of the property after the colon (red is the value being set for the color property).</li>
-            <li>This example contains two declarations, one for color and another for font-size.</li>
-          </ul>
-        </section>
-        
-        <section class="main-section" id="How_is_CSS_applied_to_HTML?">
-          <header>How is CSS applied to HTML?</header>
-          <p>As explained in How browsers load websites, when you navigate to a web page, the browser first receives the HTML document containing the web page content and converts it to a DOM tree.</p>
-          <p>After that, any CSS rules found in the web page (either inserted directly in the HTML, or in referenced external .css files) are sorted into different "buckets", based on the different elements they will be applied to (as specified by their selectors). The CSS rules are then applied to the DOM tree, resulting in a render tree, which is then painted to the browser window.</p>
-          <p>Let's look at an example. First of all, we'll define an HTML snippet that the CSS could be applied to:</p>
-        <code>
-          &lt;h1&gt;CSS is great&lt;/h1&gt;<br>
-        &lt;h2&gt;CSS stands for Cascading Style Sheets&lt;/h2&gt;<br>
-        &lt;p&gt;You can style text.&lt;/p&gt;<br>
-        &lt;p&gt;And create layouts and special effects.&lt;p&gt;
-        </code>
-        <p>Now, our CSS, repeated from the previous section to style the H1 headline:</p>
-        <code>h1 {<br>
-          color: red;<br>
-          font-size: 2.5em;<br>
-        }</code>
-        <p>Add styles for the H2 headline:</p>
-        <code>h2 {<br>
-          color: blue;<br>
-          font-size: 1.5em;<br>
-        }</code>
-        <p>Finally, add styles for the paragraphs (the p tags):</p>
-        <code>p {<br>
-          color: aqua;<br>
-          padding: 5px;<br>
-          background: midnightblue;<br>
-        }
-        </code>
-        </section>
-        
-        <section class="main-section" id="Summary">
-          <header>Summary</header>
-          <p>Now that you have some understanding of what CSS is and how it works, let's move on to giving you some practice with writing CSS yourself and explaining the syntax in more detail.</p>
-        </section>
-        
-        </main>
+      <div id="sections">
+        <!-- sections-fragment -->
+      </div>
+    
+    </main>
         
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <!-- <script src="index.js"></script> -->
-</body>
+    <script src="js/technical-js.js"></script>
+  </body>
 </html>
