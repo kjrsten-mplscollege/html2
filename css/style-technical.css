@@ -1,3 +1,7 @@
+.hidden {
+  display:none;
+}
+
 body {
     font-family: "Helvetica", "Arial", sans-serif;
   }
@@ -20,9 +24,7 @@ body {
     width: 300px;
     padding: 10px;
     height: 100%;
-    border-right: solid;
-    border-right-color: currentcolor;
-    border-color: rgba(0, 22, 22, 0.4);
+    border-right: solid 3px rgb(87, 163, 163);
   }
 
   #main-doc {
@@ -33,11 +35,12 @@ body {
   }
 
   .blurb {
-    color: rgb(100, 181, 97);
+    color: rgb(181, 171, 97);
     font-style: italic;
     font-weight: bold;
   }
   
+
   @media (min-width: 600px) {
     /* Make the nav go to the left on a larger screen*/
     nav {
