@@ -22,6 +22,15 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+    <script>
+    //Avoid a flash of unstyled content - hide everything until the whole page is ready
+    $('html').addClass('hidden');
+    
+    $(document).ready(function() {
+      $('html').removeClass('hidden');
+    });
+    </script>
+     
     <script src="js/technical-js.js"></script>
   </body>
 </html>
