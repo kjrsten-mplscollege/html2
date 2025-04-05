@@ -32,6 +32,11 @@ body {
     margin-bottom: 110px;
   }
 
+  .blurb {
+    color: rgb(132, 132, 132);
+    font-style: italic;
+    font-weight: bold;
+  }
   
   @media (min-width: 600px) {
     /* Make the nav go to the left on a larger screen*/
