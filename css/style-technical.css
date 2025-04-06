@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   header {
@@ -25,7 +25,7 @@ body {
     width: 300px;
     padding: 10px;
     height: 100%;
-    border-right: solid 5px rgb(211, 94, 226);
+    border-right: solid 5px rgb(126, 125, 137);
   }
 
   #main-doc {
@@ -36,7 +36,7 @@ body {
   }
 
   .blurb {
-    color: rgb(239, 9, 170);
+    color: rgb(15, 172, 114);
     font-style: italic;
     font-weight: bold;
   }
