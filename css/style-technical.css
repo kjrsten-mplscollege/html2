@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Courier New', Courier, monospace;
   }
 
   header {
@@ -50,3 +50,10 @@ body {
       padding-right: 25px;
     }
   }
+
+
+  /* Make everything visible as the last thing we do */
+  html {
+    visibility: visible;
+    opacity: 1;
+}

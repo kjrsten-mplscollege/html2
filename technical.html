@@ -4,18 +4,7 @@
 
   <head>
     <!-- Avoid a flash of unstyled content - hide everything until the whole page is ready -->
-    <style type="text/css">
-      .hidden {display:none;}
-    </style>
-
-    <script>
-      var MyHtml = document.querySelector("html");
-      MyHtml.classList.add("hidden");
-
-      document.addEventListener("DOMContentLoaded", function(e) {
-        //show body content once styles and includes are ready
-        MyHtml.classList.remove("hidden");
-      });    
+    <style>html{visibility: hidden;opacity:0;}</style> 
     </script>
 
     <!-- All of the above content is replaced by the head-fragment.html content upon page load completion -->
