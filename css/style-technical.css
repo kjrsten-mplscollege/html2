@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color:aquamarine;
+    background-color:rgb(127, 232, 255);
     font-family:'Courier New', Courier, monospace;
   }
 
@@ -54,7 +54,7 @@ body {
   }
 
 
-  /* Make everything visible as the last thing we do */
+  /* Make everything visible as the last thing we do - make sure this code stays at the end of the last CSS file that gets loaded. */
   html {
     visibility: visible;
     opacity: 1;

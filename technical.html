@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-
   <head>
+    <!-- Load the main CSS first -->
     <link rel="stylesheet" href="css/style-technical.css">
 
     <!-- Avoid a flash of unstyled content - hide everything until the whole page is ready -->
-    <style>html{visibility: hidden;opacity:0;}</style> 
+    <style>
+    html {
+      visibility: hidden;
+      opacity:0;
+      }
+    </style>
 
-    <!-- All of the above content is replaced by the head-fragment.html content upon page load completion -->
-
+    <!-- All of the above content is replaced by the head-fragment.html content upon page load completion. The external CSS file is also linked in the head-fragment. -->
   </head>
   
   <body>
     <nav id="navbar">
-      <!-- navbar-fragment -->
+      <!-- navbar-fragment.html gets loaded here -->
     </nav>
 
     <main id="main-doc">
-      <p class="blurb">Begone, Flash of Unstyled Content! This article explains what CSS is, what the basic syntax looks like, and how your browser applies CSS to HTML to style it.</p>
+      <p class="blurb">This paragraph represents unique content for the page, while all the repeated content is loaded as fragments that only need to be edited in one plage instead of being duplicated on every page.</p>
 
       <div id="sections">
-        <!-- sections-fragment -->
+        <!-- sections-fragment gets loaded here -->
       </div>
     
     </main>
         
-
+    <!-- Including jQuery so that we can load page fragments -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-     
+    
+    <!-- The script below includes the code for loading the correct fragments into this page -->
     <script src="js/technical-js.js"></script>
   </body>
 </html>
