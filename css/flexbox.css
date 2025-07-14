@@ -1,0 +1,137 @@
+body {
+    padding: 50px;
+}
+
+.mycontainer {
+    background-color: rgb(196, 196, 225);
+    /* padding: 15px; */
+    margin: 30px;
+}
+
+.myitem {
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(130, 161, 151);
+}
+
+.container1 {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.container2 {
+    height: 300px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.container4 {
+    height: 300px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container5 {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.container6 {
+    height: 300px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.newcontainer {
+    background-color: rgb(189, 221, 172);
+    /* padding: 15px; */
+    margin: 30px;
+}
+
+.newitem {
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(120, 127, 248);
+}
+
+.nc1 {
+    width: 400px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nc2 {
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.nc3 {
+    width: 400px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.nc4 {
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.nc5 {
+    width: 400px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.nc6 {
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
