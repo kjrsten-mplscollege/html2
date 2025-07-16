@@ -1,9 +1,10 @@
+main {
+    margin: 30px;
+}
 
 /* For all containers on the page (no flexbox code) */
 .imagecontainer {
     background-color: rgb(241, 209, 173);
-    /* padding: 15px; */
-    margin: 30px;
 }
 
 /* For all image cards on the page (no flexbox code) */
