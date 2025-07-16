@@ -1,0 +1,70 @@
+
+/* For all containers on the page (no flexbox code) */
+.imagecontainer {
+    background-color: rgb(241, 209, 173);
+    /* padding: 15px; */
+    margin: 30px;
+}
+
+/* For all image cards on the page (no flexbox code) */
+.imageitem {
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(13, 18, 106);
+    /* max-width: 250px; */
+    /* min-height:max-content; */
+    /* This equalizes the boxes' height */ 
+}
+
+
+/* For all images - responsiveness */
+.responsive-flex {
+    width: 250px;
+    max-height: 300px;
+
+    max-width: 100%;
+    /* Maintain aspect ratio */
+
+    flex: 1 1 auto;
+    /* Allow images to grow and shrink */
+    object-fit:contain;
+}
+
+/* size the paragraph to match the image */
+.imageitem p {
+    max-width: 250px;
+    text-align: left;
+}
+
+
+
+
+.ic1 {
+    width: 100%;
+    min-height: 400px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    /* gap between items. If that's already controlled horizontally by something else, it is the gap between rows only */
+    
+    justify-content:flex-start;
+    justify-content:center;
+    /* this refers to all the items inside the box collectively */
+
+    /* align-items:stretch; */
+    /* This controls how the items are centered top to bottom when used with a row, but only if they don't have an explicit height */
+}
+
+.ic1 .item2 {
+    /* item 2 can grow if it has room, but only if it does not have an explicit width */
+    /* flex-grow: 2; */
+}
+
+
+

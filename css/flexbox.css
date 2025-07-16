@@ -156,8 +156,7 @@ body {
     padding: 5px;
     margin: 5px;
     background-color: rgb(13, 18, 106);
-    /* height:max-content; */
-    max-width: 200px;  
+    /* height:max-content; */ 
 }
 
 /* .ic1 img, */
@@ -168,6 +167,8 @@ body {
     /* Allow images to grow and shrink */
     object-fit:contain;
 }
+
+
 
 
 
@@ -187,6 +188,8 @@ body {
 .ic1 .item2 {
     flex-grow: 2;
 }
+
+
 
 
 .ic2 {
