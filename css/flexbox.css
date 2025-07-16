@@ -95,11 +95,14 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
+
+    /* align content only has an effect if the items are not already being controlled by align-items. But "align content" works on whole columns, not individual items */
+    align-content: flex-end;
 }
 
 .nc3 {
-    width: 400px;
+    width: 600px;
     height: 400px;
 
     display: flex;
@@ -125,6 +128,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
+    /* space around the rows */
 }
 
 .nc6 {
@@ -133,5 +137,77 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-evenly;
+    align-content: space-between;
+    /* space between the columns */
 }
+
+
+.imagecontainer {
+    background-color: rgb(241, 209, 173);
+    /* padding: 15px; */
+    margin: 30px;
+}
+
+.imageitem {
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(13, 18, 106);
+    /* height:max-content; */
+    max-width: 200px;  
+}
+
+/* .ic1 img, */
+.responsive-flex {
+    max-width: 100%;
+    /* Maintain aspect ratio */
+    flex: 1 1 auto;
+    /* Allow images to grow and shrink */
+    object-fit:contain;
+}
+
+
+
+.ic1 {
+    width: 100%;
+    min-height: 400px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    /* this refers to all the items inside the box collectively */
+    gap: 10px;
+    align-items:stretch;
+    /* This controls how the items are centered top to bottom when used with a row*/
+}
+
+.ic1 .item2 {
+    flex-grow: 2;
+}
+
+
+.ic2 {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    /* this refers to all the items inside the box collectively */
+    gap: 10px;
+    align-items: center;
+    /* This controls how individual items are centered top to bottom when used with a row, left to right when used in a column*/
+}
+
+.ic2 .imageitem {
+    /* min-width: 200px; */
+}
+
+.ic2 .item2 {
+    /* height: 300px; */
+    /* align-self:stretch; */
+}
+
