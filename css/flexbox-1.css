@@ -67,5 +67,29 @@ main {
     /* flex-grow: 2; */
 }
 
+/* For large screens */
+@media (min-width: 1500px) {
+  /* For all images - responsiveness */
+.responsive-flex {
+    width: 350px;
+    max-height: 400px;
+    overflow: hidden;
+
+    max-width: 100%;
+    /* Maintain aspect ratio */
+
+    flex: 1 1 auto;
+    /* Allow images to grow and shrink */
+    object-fit:contain;
+}
+
+/* size the paragraph to match the image */
+.imageitem p {
+    max-width: 350px;
+    text-align: left;
+}
+
+}
+
 
 
