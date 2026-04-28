@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/survey-styles.css">
+  </head>
+
+  <body>
+  <h1 id="title">Favorite Spices</h1>
+  <p id="description">This survey is all about your favorite flavors!</p>
+  </body>
+
+  <form id="survey-form">
+    <label for="name" id="name-label">Name</label>
+    <input type="text" id="name" placeholder="your first name" required />
+    <label id="email-label" for="email">Email</label>
+    <input type="email" id="email" placeholder="sample@sample.com" required />
+    <label for="number" id="number-label">Your Age</label>
+    <input type="number" id="number" min="18" max="25" placeholder="20" />
+    <br>
+    <label for="dropdown">Which is in your cupboard?</label>
+    <select id="dropdown">
+      <option value="">select</option>
+      <option value="mint">Mint</option>
+      <option value="cayenne">Cayenne Pepper</option>
+    </select>
+<fieldset class="picker">
+    <p>Only one can win!</p>
+    <input type="radio" id="black-pepper" name="spice" value="black-pepper" checked />
+    <label for="black-pepper">Black Pepper</label>
+    <br>
+
+    <input type="radio" id="cinnamon" name="spice" value="cinnamon" />
+    <label for="cinnamon">Cinnamon</label>
+    <br>
+
+    <input type="radio" id="curry" name="spice" value="curry" checked />
+    <label for="curry">Curry Powder</label>
+    <br>
+
+    <p>How many of these do you use?</p>
+    <input type="checkbox" id="thyme" value="thyme">
+    <label for="thyme">Thyme</label>
+    <br>
+
+    <input type="checkbox" id="sage" value="sage">
+    <label for="sage">Sage</label>
+    <br>
+
+    <input type="checkbox" id="rosemary" value="rosemary">
+    <label for="rosemary">Rosemary</label>
+    <br>
+
+    <input type="checkbox" id="parsley" value="parsley">
+    <label for="parsley">Parsley</label>
+    </fieldset>
+    <br>
+
+    <label for="comments">Additional Comments</label>
+    <textarea id="comments" rows="4"></textarea>
+    <br>
+
+
+<input type="submit" id="submit" value="Submit">
+
+  </form>
+</html>
